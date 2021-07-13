@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #c5c2c2;
+}
+
+.container {
+  width: 384px;
+  margin: 10px auto;
+  border: 1px solid white;
+  max-height: 640px;
+  overflow: auto;
+  background-color: white;
+  height: 730px;
+
+  border-radius: 20px;
+}
+/* .container:hover{
+  overflow: scroll;
+} */
+.first-bar {
+  margin: 20px 10px 5px 10px;
+  display: flex;
+  font-size: 19px;
+  list-style: none;
+  padding: 20px 30px 10px 30px;
+}
+.cart {
+  float: right;
+  margin-left: 270px;
+}
+.carticon {
+  float: right;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+}
+.carticon:hover{
+  
+padding: 2px;
+  
+}
+.Name {
+  margin: -10px 40px;
+  text-align: center;
+}
+.lists {
+  list-style: none;
+  
+}
+.lists ul {
+  display: flex;
+  list-style: none;
+}
+.lists li {
+  padding: 15px ;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.lists li:hover {
+  background-color: rgb(136, 133, 133);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.main_content{
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: -20px 20px;
+  
+  padding: 0 10px;
+  padding-top:-800px;
+}
+.card{
+  box-sizing: content-box;
+width:130px;
+padding: 0 10px;
+
+border-radius: 15px;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+background-color: rgb(253, 249, 249);
+text-align: center;
+-webkit-transform: scale(0.8);
+transform: scale(0.8);
+-webkit-transition: all .3s ease-in-out;
+transition: all .3s ease-in-out;
+cursor: pointer;
+}
+.card_box{
+  display: inline-block;
+  
+}
+.card img{
+  width: 135px;
+  
+}
+.card_header p{
+  font-size: 0.9rem;
+  background-color: rgb(231, 225, 225);
+  border-radius: 19px;color: rgb(24, 23, 23);
+  padding: 1px 0;
+  
+}
+.main_content .card:hover {
+  background-color: #ced2d8;
+  -webkit-transform: scale(1.0);
+          transform: scale(1.0);
+  cursor: pointer;
+}
+
+.main_content .card:hover .btn {
+  background-color: #c4c2c2;
+  color: rgb(228, 220, 220);
+}
+/* element.style{
+  padding: 70px;
+} */
+.Zoom{
+  width: 100%;
+}
+.details_img{
+ 
+  border-radius: 15px;
+  width: 350px;
+  padding: 30px 3px;
+  margin: 50px 28px;
+  text-align: center;
+  justify-content: center;
+}
+.details_img img{
+  width: 500px;
+  /* margin-top: -100px; */
+
+}
+.details_page {
+  background-color: rgb(243, 240, 240);
+  border-radius: 10px;
+  margin: 5px 15px 10px;
+  margin-top: -45px;
+  padding: 13px;
+  cursor: pointer;
+}
+.page_bar{
+  display: flex;
+  margin: 10px 10px;
+  
+}
+.page_bar h3{
+  font-size: 1.1rem;
+  margin-left: 10px;
+}
+.page_description{
+  margin: 14px;color: rgb(90, 88, 88);
+  text-align: center;
+}
+.page_footer{
+  display: flex;
+}
+.footer_size{
+  display: flex;
+  margin-left: 50px;color: rgb(54, 53, 53);
+}
+.footer_color{
+  display: flex;
+  margin-left: 78px;color: rgb(49, 48, 48);
+}
+
+.checkout_list{
+  display: flex;
+  margin: -28px 10px 75px -20px;
+}
+.checkout_list img{
+  background-color: #f1ecec;
+  border-radius: 10px;
+
+  width: 120px;
+  text-align: center;
+  margin-top: -10px;
+}
+.checkout_details{
+  margin-left: 20px;
+  padding: -10px;
+}
+.checkout_details h3{
+  margin-top: -10px;
+  font-size: 14px;
+}
+.items_amount{
+  margin:  50px 50px;
+  display: flex;
+}
+.items_amount h4{
+  margin-left: 150px;
+  margin-top: 10px;
+}
+.AddCart{
+  padding: 5px;
+}
+.AddCart button{
+  padding: 15px 55px;
+  background-color: rgb(226, 222, 223);
+  border-radius: 25px;
+  border: 1px solid rgb(218, 215, 213);
+  color: #111111;
+  cursor: pointer;
+}
+.AddCart button:hover
+{
+  background-color: rgb(66, 65, 65);
+  color: rgb(218, 189, 189);
+}
+.delete_btn{
+  margin-left: 60px;
+  background-color: transparent;
+  border: transparent;
+  font-size: 20px;
+}
+@media only screen and (min-width:768px) {
+  .container{
+    width: auto;
+  }
+  .cart{
+    margin-left: 1200px;
+  }
+  .lists{
+    margin: 40px;
+    text-align: center;
+  }
+  .lists li{
+    
+    padding: 10px 150px;
+  }
+  .card{
+    width: 300px;
+  }
+  .checkout_list{
+    width: 100%;
+    padding: 20px;
+  }
+}
